@@ -13,7 +13,10 @@ body {
 }
 
 .no-scroll {
-    overflow: hidden;
+    height: 100%;
+   width: 100%;
+   position: fixed;
+   overflow: hidden;
 }
 
 .header {
@@ -126,6 +129,12 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/* #switcher {
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+}*/
 
 .menu-line {
     display: block;
@@ -366,11 +375,11 @@ body {
     color: #000000;
 }
 
-.news-film {
+/* .news-film {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 .news-card {
     flex-basis: 23%;
@@ -403,3 +412,4 @@ body {
     transform: translateY(-50%);
     z-index: 99;
 }
+

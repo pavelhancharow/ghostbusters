@@ -86,6 +86,8 @@
 }
 
 @media (max-width: 768px) {
+  
+
   .container {
     width: 560px;
   }
@@ -129,6 +131,48 @@
   .mobile-buttons {
     display: block;
     margin-left: auto;
+  }
+
+  @keyframes m-menu-button {
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes arrow-1 {
+    to {
+      transform: translate(-3px, 2px) rotate(-45deg);
+      width: 60%;
+    }
+  }
+
+  @keyframes arrow-2 {
+    to {
+      transform: translate(-3px, -2px) rotate(45deg);
+      width: 60%;
+    }
+  }
+
+  #switcher:checked~label .menu-line:first-child {
+    animation-name: arrow-1;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+  }
+
+  #switcher:checked~label .m-menu-button {
+    animation-name: m-menu-button;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    /* transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); */
+    /* transition: transform .7 ease-in; */
+  }
+
+
+  #switcher:checked~label .menu-line:last-child {
+    animation-name: arrow-2;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
   }
 
   .m-menu {
