@@ -14,9 +14,9 @@ body {
 
 .no-scroll {
     height: 100%;
-   width: 100%;
-   position: fixed;
-   overflow: hidden;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
 }
 
 .header {
@@ -40,6 +40,12 @@ body {
     width: 1px;
     background-color: #d4d4d4;
     margin-left: 34px;
+}
+
+.m-line {
+    display: none;
+    width: 104px;
+    border-top: 1px solid #d4d4d4;
 }
 
 .search-input {
@@ -323,7 +329,7 @@ body {
     visibility: hidden;
 }
 
-.tabs-content.visible{
+.tabs-content.visible {
     display: flex;
     visibility: visible;
 }
@@ -413,4 +419,3 @@ body {
     transform: translateY(-50%);
     z-index: 99;
 }
-
