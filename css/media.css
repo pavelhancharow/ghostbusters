@@ -214,7 +214,16 @@
   .button-group {
     height: auto;
     flex-direction: column;
+    position: relative;
   }
+
+  .button-group::before{
+    content: "";
+    position: absolute;
+    top: -65px;
+    width: 100%;
+    border-top: 1px solid #d4d4d4;
+   }
 
   .search-input {
     margin: 0;
