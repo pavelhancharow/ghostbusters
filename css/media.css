@@ -106,7 +106,6 @@
 
   .film-wrapper {
     flex-wrap: wrap;
-
   }
 
   .film-text {
@@ -220,7 +219,8 @@
   .button-group::before{
     content: "";
     position: absolute;
-    top: -65px;
+    top: -10vh;
+    left: 0;
     width: 100%;
     border-top: 1px solid #d4d4d4;
    }
