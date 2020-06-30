@@ -74,6 +74,7 @@ body {
     line-height: 21px;
     margin-right: 18px;
     color: #363636;
+    transition: color 0.3s ease;
 }
 
 .navigation-link::after {
@@ -99,6 +100,7 @@ body {
 
 .button {
     height: 100%;
+    transition: color 0.3s ease;
     cursor: pointer;
 }
 
@@ -135,12 +137,6 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
-
-/* #switcher {
-    position: absolute;
-    left: -999999px;
-    visibility: hidden;
-}*/
 
 .menu-line {
     display: block;

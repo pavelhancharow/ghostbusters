@@ -1,10 +1,13 @@
 $(document).ready(function () {
   const mMenuBtn = $(".m-menu-button");
   const mMenu = $('.m-menu');
+  const mArrow = $('.menu-line')
   const tab = $('.tab');
 
   mMenuBtn.on('click', function () {
-    mMenu.toggleClass('active');
+    mMenu.toggleClass('active animate__animated');
+    mMenuBtn.toggleClass('active');
+    mArrow.toggleClass('arrow');
     $('body').toggleClass('no-scroll');
   });
 

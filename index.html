@@ -9,15 +9,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="https://pavelhancharow.github.io/ghostbusters/"><img src="img/logo.png" alt="logo: film" class="logo" width="68"></a>
+        <a href="/"><img src="img/logo.png" alt="logo: film" class="logo" width="68"></a>
         <div class="line"></div>
-        <div class="m-menu">
+        <div class="m-menu animate__slideInUp">
             <input type="search" class="search-input" placeholder="Поиск по фильмам...">
             <nav class="navigation">
                 <a href="#" class="navigation-link">Фильмы</a>
@@ -35,20 +37,18 @@
             <button class="search-button">
                 <img src="img/search-icon.svg" alt="search">
             </button>
-            <input type="checkbox" id="switcher" style="display: none;">
-            <label for="switcher" class="m-menu-button-line">
-                <button class="m-menu-button">
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                </button>
+            <button class="m-menu-button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
             </label>
         </div>
     </header>
     <section class="film">
         <div class="container">
             <div class="film-wrapper">
-                <div class="film-trailer">
+                <div class="film-trailer animate__animated animate__fadeInLeft">
                     <img src="img/poster.jpg" alt="poster" class="poster">
                     <a data-fancybox class="trailer-button" href="https://www.youtube.com/watch?v=o705uydkgew">
                         <img src="img/play.svg" alt="play" class="trailer-button-icon">
@@ -56,8 +56,9 @@
                     </a>
                 </div>
                 <!-- /.film-trailer -->
-                <div class="film-text">
-                    <h1 class="film-title">Охотники за привидениями: <br />Наследники</h1>
+                <div class="film-text animate__animated animate__fadeInRight">
+                    <h1 class="film-title">Охотники за привидениями:
+                        <br />Наследники</h1>
                     <span class="film-subtitle">Ghostbusters: Afterlife</span>
                     <p class="film-description">
                         Мать-одиночка с двумя детьми-подростками селится на старой ферме в&nbsp;Оклахоме, полученной в

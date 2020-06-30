@@ -86,10 +86,12 @@
 }
 
 @media (max-width: 768px) {
-
-
   .container {
     width: 560px;
+  }
+
+  .search-button {
+    display: none;
   }
 
   .header {
@@ -98,7 +100,6 @@
     padding-left: 2.5%;
   }
 
-
   .film {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -106,7 +107,6 @@
 
   .film-wrapper {
     flex-wrap: wrap;
-
   }
 
   .film-text {
@@ -133,46 +133,28 @@
     margin-left: auto;
   }
 
-  @keyframes m-menu-button {
-    to {
-      transform: rotate(90deg);
-    }
+  .m-menu-button {
+    transition: transform 0.7s;
   }
 
-  @keyframes arrow-1 {
-    to {
-      transform: translate(-3px, 2px) rotate(-45deg);
-      width: 60%;
-    }
+  .m-menu-button.active {
+    transform: rotate(90deg);
   }
 
-  @keyframes arrow-2 {
-    to {
-      transform: translate(-3px, -2px) rotate(45deg);
-      width: 60%;
-    }
+  .menu-line {
+    transition: transform 0.7s,
+      width 0.5s;
   }
 
-  #switcher:checked~label .menu-line:first-child {
-    animation-name: arrow-1;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
+  .arrow:first-child {
+    transform: translate(-3px, 2px) rotate(-45deg);
+    width: 60%;
+
   }
 
-  #switcher:checked~label .m-menu-button {
-    animation-name: m-menu-button;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
-    /* transform: rotate(90deg);
-    -webkit-transform: rotate(90deg); */
-    /* transition: transform .7 ease-in; */
-  }
-
-
-  #switcher:checked~label .menu-line:last-child {
-    animation-name: arrow-2;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
+  .arrow:last-child {
+    transform: translate(-3px, -2px) rotate(45deg);
+    width: 60%;
   }
 
   .m-menu {
@@ -191,6 +173,7 @@
 
   .m-menu.active {
     display: flex;
+    z-index: 99;
   }
 
   .navigation {
@@ -211,9 +194,24 @@
     margin-bottom: 0;
   }
 
+  .navigation-link:hover::after {
+    transform: scaleX(0);
+  }
+
+  .navigation-link:hover {
+    color: #5671F6;
+    background-color: #ffffff;
+  }
+
   .button-group {
     height: auto;
     flex-direction: column;
+  }
+
+  .button:hover {
+    color: #5671F6;
+    background-color: #ffffff;
+    cursor: pointer;
   }
 
   .m-line {
