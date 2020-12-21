@@ -1,5 +1,3 @@
-Promotional Website
+## "Ghostbusters: Afterlife" Promotional website
 
-"Ghostbusters: Afterlife"
-
-https://pavelhancharow.github.io/ghostbusters/
+[Link to website](https://pavelhancharow.github.io/ghostbusters/)
